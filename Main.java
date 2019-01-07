@@ -31,6 +31,7 @@ public class Main
             }
         }
         int middle = list.length/2;
+        System.out.println("Middle Element Is: ");
         System.out.println(list[middle]);
         
         //find coordinates of mid element
