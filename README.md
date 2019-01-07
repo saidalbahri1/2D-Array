@@ -3,7 +3,7 @@ User defined 2D array to find the middle element and find its immediate neighbor
 
 For example, the following image is a 2D array. The middle element is 5.
 
-<br>
+
 ![alt text](https://i.stack.imgur.com/0O7H8.jpg)
 
 
