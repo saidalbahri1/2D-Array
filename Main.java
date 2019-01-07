@@ -6,11 +6,11 @@ public class Main
     {
         while (n > 0)
         {
-            n -= 6;
+            n -= midElement;
         }
         while (n < 0)
         {
-            n += 6;
+            n += midElement;
         }
         return n == 0;
     }
@@ -31,7 +31,6 @@ public class Main
             }
         }
         int middle = list.length/2;
-        System.out.println("The Middle Element is:");
         System.out.println(list[middle]);
         
         //find coordinates of mid element
@@ -63,7 +62,7 @@ public class Main
             {
                 if((curRow != x || curCol != y))
                 {
-                    if(isItMultByMidElement(grid[curRow][curCol], middle) == true)
+                    if(isItMultByMidElement(grid[curRow][curCol], list[middle]) == true)
                     {
                        nbors.add(grid[curRow][curCol]); 
                     }
@@ -86,16 +85,17 @@ public class Main
         int[][] arr = new int[row][col];
         System.out.println("Fill Array With Numbers:");
         Scanner scn2 = new Scanner(System.in);
-        for (int[] arr1 : arr) {
-            for (int j = 0; j < arr1.length; j++) 
+        for(int i = 0; i < arr.length; i++)
+        {
+            for(int j = 0; j < arr[i].length; j++)
             {
-                arr1[j] = scn2.nextInt();
+                arr[i][j] = scn2.nextInt();
             }
         }
         System.out.println("The array is the following:");
-        for (int[] arr1 : arr) 
+        for (int k = 0; k < arr.length; k++)
         {
-            System.out.println(Arrays.toString(arr1));
+            System.out.println(Arrays.toString(arr[k]));
         }
         
         //find neighbours
