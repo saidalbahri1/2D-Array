@@ -1,5 +1,5 @@
 # 2D-Array
-User defined 2D array to find the middle element and find its immediate neighbors. Then check those neighbors if they are multiples of 6. If yes, put those integers in 1D array.
+User defined 2D array to find the middle element and find its immediate neighbors. Then check those neighbors if they are multiples of the central element. If yes, put those integers in 1D array and display them.
 
 For example, the following image is a 2D array. The middle element is 5.
 
